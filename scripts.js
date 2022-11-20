@@ -348,15 +348,16 @@ for (let i = 0; i < 4; i++) {
       console.log(keywords);
       submit.classList.add("show");
 
+      console.log("keywords: " + keywords);
+
       // remove duplicate keywords
       uniqKeywords = keywords.reduce(function (a, b) {
         if (a.indexOf(b) < 0) a.push(b);
         return a;
       }, []);
 
-      console.log(uniqKeywords);
+      console.log("unique keywords: " + uniqKeywords);
 
-      console.log(uniqKeywords[1]);
       let stringKeywords = uniqKeywords[0];
       for (let i = 1; i < uniqKeywords.length; i++) {
         stringKeywords = `${stringKeywords + "," + uniqKeywords[i]}`;
@@ -366,8 +367,6 @@ for (let i = 0; i < 4; i++) {
 
       const gameCard = document.getElementById("gameCard");
       const gameCardWrapper = document.getElementById("gameCardWrapper");
-      const prevButton = document.getElementById("slide-arrow-prev");
-      const nextButton = document.getElementById("slide-arrow-next");
 
       let pageNumber = 1;
       let API_URL = `https://api.rawg.io/api/games?key=0184e37f47674da7b331ff365749c661&tags=${stringKeywords}&page_size=50&page=${pageNumber}`;
