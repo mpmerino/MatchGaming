@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>MatchGaming!</title>
+    <script
+      src="https://kit.fontawesome.com/09d46242b5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="flex-col">
     <main class="flex-col">
@@ -26,9 +30,14 @@
       <a href="#" id="submit">Submit</a>
       <div id="gameCardWrapper">
         <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
-
         <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
-        <ul id="gameCard"></ul>
+        <ul id="gameCard">
+          <div id="thanks">Thanks for visiting!</div>
+        </ul>
+        <div id="options">
+          <i id="dislike" class="fa-solid fa-xmark"></i
+          ><i id="like" class="fa-solid fa-heart"></i>
+        </div>
       </div>
       <script src="./scripts.js" type="module"></script>
     </main>

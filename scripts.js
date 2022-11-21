@@ -68,228 +68,228 @@ const Questions = [
       { text: "Going on a date", keywords: ["romantic"] },
     ],
   },
-  {
-    id: 1,
-    q: "When do you have the best energy?",
-    a: [
-      { text: "6am-12pm", keywords: ["farm"] },
-      { text: "12pm-6pm", keywords: ["happy"] },
-      { text: "6pm-Midnight", keywords: ["busy"] },
-      { text: "Midnight-6am", keywords: ["dark"] },
-    ],
-  },
-  {
-    id: 2,
-    q: "What are you watching on Netflix?",
-    a: [
-      { text: "Gilmore Girls", keywords: ["family"] },
-      { text: "Parks & Rec", keywords: ["humor"] },
-      { text: "Always Be My Maybe", keywords: ["romantic"] },
-      { text: "Tales by Light", keywords: ["adventure"] },
-    ],
-  },
-  {
-    id: 3,
-    q: "You can listen just one singer for the rest of your life:",
-    a: [
-      { text: "Michael Jackson", keywords: ["creative"] },
-      { text: "Eminem", keywords: ["energy"] },
-      { text: "Taylor Swift", keywords: ["happy"] },
-      { text: "Metallica", keywords: ["fighting"] },
-    ],
-  },
-  {
-    id: 4,
-    q: "What’s your decision-making style?",
-    a: [
-      { text: "I often put off making decisions", keywords: ["lazy"] },
-      {
-        text: "I spend a lot of time writing pros and cons",
-        keywords: ["logic"],
-      },
-      {
-        text: "I trust myself to make decisions quickly and easily",
-        keywords: ["action"],
-      },
-      { text: "Deciwhat?", keywords: ["long"] },
-    ],
-  },
-  {
-    id: 5,
-    q: "If you could live anywhere, where would you live?",
-    a: [
-      { text: "New York", keywords: ["competitive"] },
-      { text: "Spain", keywords: ["relaxing"] },
-      { text: "Los Angeles", keywords: ["creative"] },
-      { text: "Rome", keywords: ["history"] },
-    ],
-  },
-  {
-    id: 6,
-    q: "Which best describes your style?",
-    a: [
-      { text: "Free spirit", keywords: ["mysterious"] },
-      { text: "Bold", keywords: ["soft"] },
-      { text: "Casual", keywords: ["casual"] },
-      { text: "Minimal", keywords: ["minimalist"] },
-    ],
-  },
-  {
-    id: 7,
-    q: "What font style do you like most?",
-    a: [
-      { text: "Modern and clean", keywords: ["modern"] },
-      { text: "Classic editorial", keywords: ["classic"] },
-      { text: "Handwriting", keywords: ["playful"] },
-      { text: "Curly cursive", keywords: ["elegant"] },
-    ],
-  },
-  {
-    id: 8,
-    q: "What is your favorite social media network?",
-    a: [
-      { text: "Twitter", keywords: ["tense"] },
-      { text: "Facebook", keywords: ["familiar"] },
-      { text: "Instagram", keywords: ["simulator"] },
-      { text: "LinkedIn", keywords: ["logic"] },
-    ],
-  },
-  {
-    id: 9,
-    q: "What is your kryptonite?",
-    a: [
-      { text: "Procrastination", keywords: ["relaxing"] },
-      { text: "Lack of focus", keywords: ["easy"] },
-      { text: "Perfectionism", keywords: ["strategy"] },
-      { text: "Self-doubt", keywords: ["gacha"] },
-    ],
-  },
-  {
-    id: 10,
-    q: "Is the glass half-empty or half-full?",
-    a: [
-      { text: "My cup runneth over", keywords: ["action"] },
-      { text: "Half-empty and I need a smaller cup", keywords: ["arcade"] },
-      { text: "My cup is never full", keywords: ["dark"] },
-      { text: "Half-full and I want to fill it up", keywords: ["educational"] },
-    ],
-  },
-  {
-    id: 11,
-    q: "Where do you get your best ideas?",
-    a: [
-      { text: "In the shower", keywords: ["strategy"] },
-      { text: "Driving in the car", keywords: ["car"] },
-      { text: "At my desk", keywords: ["fps"] },
-      { text: "At the gym", keywords: ["sports"] },
-    ],
-  },
-  {
-    id: 12,
-    q: "What happens when your alarm goes off?",
-    a: [
-      { text: "I’m wide awake and filled with energy", keywords: ["energic"] },
-      { text: "I wonder who set the alarm", keywords: ["horror"] },
-      { text: "I roll over for just a few more ZZZ’s", keywords: ["cozy"] },
-      { text: "I make myself a cup of coffee", keywords: ["survival"] },
-    ],
-  },
-  {
-    id: 13,
-    q: "Pick an amusement park ride",
-    a: [
-      { text: "Rollercoaster", keywords: ["adrenaline"] },
-      { text: "Carousel", keywords: ["kids"] },
-      { text: "A water ride", keywords: ["racing"] },
-      { text: "Bumper cars", keywords: ["teams"] },
-    ],
-  },
-  {
-    id: 14,
-    q: "What’s your favorite form of exercise?",
-    a: [
-      { text: "Outdoor activities", keywords: ["adventure"] },
-      { text: "Martial arts", keywords: ["fight"] },
-      { text: "Gym routines", keywords: ["build"] },
-      { text: "Exerwhat?", keywords: ["cooking"] },
-    ],
-  },
-  {
-    id: 15,
-    q: "What Is Your Ideal Picnic Scene?",
-    a: [
-      { text: "The Beach", keywords: ["peaceful"] },
-      { text: "The Park", keywords: ["outdoors"] },
-      { text: "The Rooftop", keywords: ["relaxing"] },
-      { text: "Mountaintop", keywords: ["adventure"] },
-    ],
-  },
-  {
-    id: 16,
-    q: "How would you spend a free day?",
-    a: [
-      { text: "Learning a new skill", keywords: ["dyi"] },
-      { text: "An outdoors activity", keywords: ["adventure"] },
-      { text: "Having a dinner away", keywords: ["elegant"] },
-      { text: "Playing videogames", keywords: ["arcade"] },
-    ],
-  },
-  {
-    id: 17,
-    q: "Which picture is the most inviting? (go with your first instinct)",
-    a: [
-      { text: "Road tripping with a friend", keywords: ["competitive"] },
-      { text: "A truck full of flowers", keywords: ["relaxing"] },
-      { text: "A puppy", keywords: ["animals"] },
-      { text: "A beach at sunset", keywords: ["beach"] },
-    ],
-  },
-  {
-    id: 18,
-    q: "How outspoken do you consider yourself?",
-    a: [
-      { text: "I'm shy but can be around people", keywords: ["mysterious"] },
-      { text: "I can be loud but also enjoy quiet", keywords: ["strategy"] },
-      {
-        text: "I’m pretty much the loudest person in every room",
-        keywords: ["open", "epic"],
-      },
-      { text: "I hate people", keywords: ["zombie", "tense"] },
-    ],
-  },
-  {
-    id: 19,
-    q: "Which describes you best when you're with your friends?",
-    a: [
-      { text: "I take charge", keywords: ["family"] },
-      { text: "I follow the flow", keywords: ["humor"] },
-      { text: "I'm quite serious", keywords: ["romantic"] },
-      { text: "I'm a good listener", keywords: ["adventure"] },
-    ],
-  },
-  {
-    id: 20,
-    q: "If you woke up tomorrow being excellent in a completely new field, what would you like to be?",
-    a: [
-      { text: "A musician", keywords: ["energy"] },
-      { text: "An e-sports star", keywords: ["happy"] },
-      {
-        text: "A doctor discovering a new treatment for cancer",
-        keywords: ["busy"],
-      },
-      { text: "Nvm I'm good, thanks", keywords: ["dark"] },
-    ],
-  },
-  {
-    id: 21,
-    q: "Where do you get your best ideas?",
-    a: [
-      { text: "In the shower", keywords: ["family"] },
-      { text: "Driving in the car", keywords: ["humor"] },
-      { text: "At my desk", keywords: ["romantic"] },
-      { text: "At the gym", keywords: ["adventure"] },
-    ],
-  },
+  // {
+  //   id: 1,
+  //   q: "When do you have the best energy?",
+  //   a: [
+  //     { text: "6am-12pm", keywords: ["farm"] },
+  //     { text: "12pm-6pm", keywords: ["happy"] },
+  //     { text: "6pm-Midnight", keywords: ["busy"] },
+  //     { text: "Midnight-6am", keywords: ["dark"] },
+  //   ],
+  // },
+  // {
+  //   id: 2,
+  //   q: "What are you watching on Netflix?",
+  //   a: [
+  //     { text: "Gilmore Girls", keywords: ["family"] },
+  //     { text: "Parks & Rec", keywords: ["humor"] },
+  //     { text: "Always Be My Maybe", keywords: ["romantic"] },
+  //     { text: "Tales by Light", keywords: ["adventure"] },
+  //   ],
+  // },
+  // {
+  //   id: 3,
+  //   q: "You can listen just one singer for the rest of your life:",
+  //   a: [
+  //     { text: "Michael Jackson", keywords: ["creative"] },
+  //     { text: "Eminem", keywords: ["energy"] },
+  //     { text: "Taylor Swift", keywords: ["happy"] },
+  //     { text: "Metallica", keywords: ["fighting"] },
+  //   ],
+  // },
+  // {
+  //   id: 4,
+  //   q: "What’s your decision-making style?",
+  //   a: [
+  //     { text: "I often put off making decisions", keywords: ["lazy"] },
+  //     {
+  //       text: "I spend a lot of time writing pros and cons",
+  //       keywords: ["logic"],
+  //     },
+  //     {
+  //       text: "I trust myself to make decisions quickly and easily",
+  //       keywords: ["action"],
+  //     },
+  //     { text: "Deciwhat?", keywords: ["long"] },
+  //   ],
+  // },
+  // {
+  //   id: 5,
+  //   q: "If you could live anywhere, where would you live?",
+  //   a: [
+  //     { text: "New York", keywords: ["competitive"] },
+  //     { text: "Spain", keywords: ["relaxing"] },
+  //     { text: "Los Angeles", keywords: ["creative"] },
+  //     { text: "Rome", keywords: ["history"] },
+  //   ],
+  // },
+  // {
+  //   id: 6,
+  //   q: "Which best describes your style?",
+  //   a: [
+  //     { text: "Free spirit", keywords: ["mysterious"] },
+  //     { text: "Bold", keywords: ["soft"] },
+  //     { text: "Casual", keywords: ["casual"] },
+  //     { text: "Minimal", keywords: ["minimalist"] },
+  //   ],
+  // },
+  // {
+  //   id: 7,
+  //   q: "What font style do you like most?",
+  //   a: [
+  //     { text: "Modern and clean", keywords: ["modern"] },
+  //     { text: "Classic editorial", keywords: ["classic"] },
+  //     { text: "Handwriting", keywords: ["playful"] },
+  //     { text: "Curly cursive", keywords: ["elegant"] },
+  //   ],
+  // },
+  // {
+  //   id: 8,
+  //   q: "What is your favorite social media network?",
+  //   a: [
+  //     { text: "Twitter", keywords: ["tense"] },
+  //     { text: "Facebook", keywords: ["familiar"] },
+  //     { text: "Instagram", keywords: ["simulator"] },
+  //     { text: "LinkedIn", keywords: ["logic"] },
+  //   ],
+  // },
+  // {
+  //   id: 9,
+  //   q: "What is your kryptonite?",
+  //   a: [
+  //     { text: "Procrastination", keywords: ["relaxing"] },
+  //     { text: "Lack of focus", keywords: ["easy"] },
+  //     { text: "Perfectionism", keywords: ["strategy"] },
+  //     { text: "Self-doubt", keywords: ["gacha"] },
+  //   ],
+  // },
+  // {
+  //   id: 10,
+  //   q: "Is the glass half-empty or half-full?",
+  //   a: [
+  //     { text: "My cup runneth over", keywords: ["action"] },
+  //     { text: "Half-empty and I need a smaller cup", keywords: ["arcade"] },
+  //     { text: "My cup is never full", keywords: ["dark"] },
+  //     { text: "Half-full and I want to fill it up", keywords: ["educational"] },
+  //   ],
+  // },
+  // {
+  //   id: 11,
+  //   q: "Where do you get your best ideas?",
+  //   a: [
+  //     { text: "In the shower", keywords: ["strategy"] },
+  //     { text: "Driving in the car", keywords: ["car"] },
+  //     { text: "At my desk", keywords: ["fps"] },
+  //     { text: "At the gym", keywords: ["sports"] },
+  //   ],
+  // },
+  // {
+  //   id: 12,
+  //   q: "What happens when your alarm goes off?",
+  //   a: [
+  //     { text: "I’m wide awake and filled with energy", keywords: ["energic"] },
+  //     { text: "I wonder who set the alarm", keywords: ["horror"] },
+  //     { text: "I roll over for just a few more ZZZ’s", keywords: ["cozy"] },
+  //     { text: "I make myself a cup of coffee", keywords: ["survival"] },
+  //   ],
+  // },
+  // {
+  //   id: 13,
+  //   q: "Pick an amusement park ride",
+  //   a: [
+  //     { text: "Rollercoaster", keywords: ["adrenaline"] },
+  //     { text: "Carousel", keywords: ["kids"] },
+  //     { text: "A water ride", keywords: ["racing"] },
+  //     { text: "Bumper cars", keywords: ["teams"] },
+  //   ],
+  // },
+  // {
+  //   id: 14,
+  //   q: "What’s your favorite form of exercise?",
+  //   a: [
+  //     { text: "Outdoor activities", keywords: ["adventure"] },
+  //     { text: "Martial arts", keywords: ["fight"] },
+  //     { text: "Gym routines", keywords: ["build"] },
+  //     { text: "Exerwhat?", keywords: ["cooking"] },
+  //   ],
+  // },
+  // {
+  //   id: 15,
+  //   q: "What Is Your Ideal Picnic Scene?",
+  //   a: [
+  //     { text: "The Beach", keywords: ["peaceful"] },
+  //     { text: "The Park", keywords: ["outdoors"] },
+  //     { text: "The Rooftop", keywords: ["relaxing"] },
+  //     { text: "Mountaintop", keywords: ["adventure"] },
+  //   ],
+  // },
+  // {
+  //   id: 16,
+  //   q: "How would you spend a free day?",
+  //   a: [
+  //     { text: "Learning a new skill", keywords: ["dyi"] },
+  //     { text: "An outdoors activity", keywords: ["adventure"] },
+  //     { text: "Having a dinner away", keywords: ["elegant"] },
+  //     { text: "Playing videogames", keywords: ["arcade"] },
+  //   ],
+  // },
+  // {
+  //   id: 17,
+  //   q: "Which picture is the most inviting? (go with your first instinct)",
+  //   a: [
+  //     { text: "Road tripping with a friend", keywords: ["competitive"] },
+  //     { text: "A truck full of flowers", keywords: ["relaxing"] },
+  //     { text: "A puppy", keywords: ["animals"] },
+  //     { text: "A beach at sunset", keywords: ["beach"] },
+  //   ],
+  // },
+  // {
+  //   id: 18,
+  //   q: "How outspoken do you consider yourself?",
+  //   a: [
+  //     { text: "I'm shy but can be around people", keywords: ["mysterious"] },
+  //     { text: "I can be loud but also enjoy quiet", keywords: ["strategy"] },
+  //     {
+  //       text: "I’m pretty much the loudest person in every room",
+  //       keywords: ["open", "epic"],
+  //     },
+  //     { text: "I hate people", keywords: ["zombie", "tense"] },
+  //   ],
+  // },
+  // {
+  //   id: 19,
+  //   q: "Which describes you best when you're with your friends?",
+  //   a: [
+  //     { text: "I take charge", keywords: ["family"] },
+  //     { text: "I follow the flow", keywords: ["humor"] },
+  //     { text: "I'm quite serious", keywords: ["romantic"] },
+  //     { text: "I'm a good listener", keywords: ["adventure"] },
+  //   ],
+  // },
+  // {
+  //   id: 20,
+  //   q: "If you woke up tomorrow being excellent in a completely new field, what would you like to be?",
+  //   a: [
+  //     { text: "A musician", keywords: ["energy"] },
+  //     { text: "An e-sports star", keywords: ["happy"] },
+  //     {
+  //       text: "A doctor discovering a new treatment for cancer",
+  //       keywords: ["busy"],
+  //     },
+  //     { text: "Nvm I'm good, thanks", keywords: ["dark"] },
+  //   ],
+  // },
+  // {
+  //   id: 21,
+  //   q: "Where do you get your best ideas?",
+  //   a: [
+  //     { text: "In the shower", keywords: ["family"] },
+  //     { text: "Driving in the car", keywords: ["humor"] },
+  //     { text: "At my desk", keywords: ["romantic"] },
+  //     { text: "At the gym", keywords: ["adventure"] },
+  //   ],
+  // },
 ];
 
 // Set start
@@ -369,7 +369,7 @@ for (let i = 0; i < 4; i++) {
       const gameCardWrapper = document.getElementById("gameCardWrapper");
 
       let pageNumber = 1;
-      let API_URL = `https://api.rawg.io/api/games?key=0184e37f47674da7b331ff365749c661&tags=${stringKeywords}&page_size=50&page=${pageNumber}`;
+      let API_URL = `https://api.rawg.io/api/games?key=0184e37f47674da7b331ff365749c661&tags=${stringKeywords}&page_size=10&page=${pageNumber}`;
 
       const getGameCard = () => {
         gameCardWrapper.classList.add("show");
@@ -380,15 +380,29 @@ for (let i = 0; i < 4; i++) {
               console.log(game);
               gameCard.innerHTML += `<li class="gameSlide" style="background-color: #${game.dominant_color}"><h2>${game.name}</h2><img src="${game.background_image}"></li>`;
             });
+
+            let likedGames = [];
+
+            let cards = document.querySelectorAll(".gameSlide");
+            const like = document.getElementById("like");
+            const dislike = document.getElementById("dislike");
+
+            const likedCard = () => {
+              likedGames.push(gameCard.lastElementChild.innerHTML);
+              gameCard.lastElementChild.remove();
+              console.log(likedGames);
+            };
+
+            const nextCard = () => {
+              gameCard.lastElementChild.remove();
+            };
+
+            like.addEventListener("click", likedCard);
+            dislike.addEventListener("click", nextCard);
           });
       };
 
       submit.addEventListener("click", getGameCard);
-      // nextButton.addEventListener("click", () => {
-      //   pageNumber++;
-      //   API_URL = `https://api.rawg.io/api/games?key=0184e37f47674da7b331ff365749c661&tags=${stringKeywords}&page_size=1&page=${pageNumber}`;
-      //   getGameCard();
-      // });
     }
   });
 }
