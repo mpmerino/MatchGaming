@@ -280,6 +280,15 @@ h2 {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  transition: 0.2s;
+}
+
+#gameCard li.liked {
+  transform: translateX(100%);
+}
+
+#gameCard li.disliked {
+  transform: translateX(-200%);
 }
 
 #gameCard h2 {

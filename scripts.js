@@ -315,7 +315,7 @@ function iterate(id) {
   op3.innerText = Questions[id].a[2].text;
   op4.innerText = Questions[id].a[3].text;
 
-  var selected = "";
+  // var selected = "";
 }
 
 // Next question
@@ -328,27 +328,19 @@ let id = 0;
 let options = document.getElementsByClassName("option");
 let uniqKeywords = [];
 
-console.log(Questions);
-console.log(Questions.length);
-
 for (let i = 0; i < 4; i++) {
   options[i].addEventListener("click", () => {
     start = false;
 
     if (id + 1 < Questions.length) {
-      console.log("you answered the question number " + (id + 1));
-      console.log(Questions[id].a[i].keywords);
       keywords.push(...Questions[id].a[i].keywords);
       id++;
       iterate(id);
     } else if (id + 1 === Questions.length) {
       keywords.push(...Questions[id].a[i].keywords);
-      console.log("you answered the question number " + (id + 1));
-      console.log("end of test");
-      console.log(keywords);
       submit.classList.add("show");
 
-      console.log("keywords: " + keywords);
+      // console.log("keywords: " + keywords);
 
       // remove duplicate keywords
       uniqKeywords = keywords.reduce(function (a, b) {
@@ -356,20 +348,20 @@ for (let i = 0; i < 4; i++) {
         return a;
       }, []);
 
-      console.log("unique keywords: " + uniqKeywords);
+      // console.log("unique keywords: " + uniqKeywords);
 
       let stringKeywords = uniqKeywords[0];
       for (let i = 1; i < uniqKeywords.length; i++) {
         stringKeywords = `${stringKeywords + "," + uniqKeywords[i]}`;
       }
 
-      console.log("string keywords = " + stringKeywords);
+      // console.log("string keywords = " + stringKeywords);
 
       const gameCard = document.getElementById("gameCard");
       const gameCardWrapper = document.getElementById("gameCardWrapper");
 
       let pageNumber = 1;
-      let API_URL = `https://api.rawg.io/api/games?key=0184e37f47674da7b331ff365749c661&tags=${stringKeywords}&page_size=10&page=${pageNumber}`;
+      let API_URL = `https://api.rawg.io/api/games?key=0184e37f47674da7b331ff365749c661&tags=${stringKeywords}&page_size=20&page=${pageNumber}`;
 
       const getGameCard = () => {
         gameCardWrapper.classList.add("show");
@@ -378,27 +370,42 @@ for (let i = 0; i < 4; i++) {
           .then((data) => {
             data.results.forEach(function (game) {
               console.log(game);
-              gameCard.innerHTML += `<li class="gameSlide" style="background-color: #${game.dominant_color}"><h2>${game.name}</h2><img src="${game.background_image}"></li>`;
+              gameCard.innerHTML += `<li class="gameSlide" style="background-color: #${game.dominant_color}"><h2>${game.name}</h2><img src="${game.background_image}"><span style="display:none" class="gameId">${game.id}</span></li>`;
+              document.likedGames.liked.value = `${game.id}`;
             });
 
             let likedGames = [];
 
-            let cards = document.querySelectorAll(".gameSlide");
             const like = document.getElementById("like");
             const dislike = document.getElementById("dislike");
+            let liked = document.getElementById("liked");
+            let disliked = document.getElementById("disliked");
+
+            const appendLiked = () => {
+              liked.append(gameCard.lastElementChild);
+              let last = Array.from(document.querySelectorAll(".gameId")).pop();
+              document.likedGames.liked.value = last.textContent;
+            };
+
+            const appendDisliked = () => {
+              disliked.append(gameCard.lastElementChild);
+              let last = Array.from(document.querySelectorAll(".gameId")).pop();
+              document.likedGames.liked.value = last.textContent;
+            };
 
             const likedCard = () => {
               likedGames.push(gameCard.lastElementChild.innerHTML);
-              gameCard.lastElementChild.remove();
-              console.log(likedGames);
+              gameCard.lastElementChild.classList.add("liked");
+              setTimeout(appendLiked, 50);
             };
 
-            const nextCard = () => {
-              gameCard.lastElementChild.remove();
+            const dislikedCard = () => {
+              gameCard.lastElementChild.classList.add("disliked");
+              setTimeout(appendDisliked, 50);
             };
 
             like.addEventListener("click", likedCard);
-            dislike.addEventListener("click", nextCard);
+            dislike.addEventListener("click", dislikedCard);
           });
       };
 
