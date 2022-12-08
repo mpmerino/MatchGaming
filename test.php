@@ -1,55 +1,52 @@
-<?php
-
-	$started = session_start();
-  ?>
+<?php $started = session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>MatchGaming!</title>
+    <?php include('head.inc.php');?>
+    <script src="js/ajaxLike.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <title>MatchGaming!</title>
-  <script src="https://kit.fontawesome.com/09d46242b5.js" crossorigin="anonymous"></script>
-</head>
+  <body class="flex-col flex-center">
+    <header><nav>
+    <?php
+    if (isset($_SESSION['login']) && $_SESSION['login'] == "OK") {
+    echo '<a href="index.php">Home</a> · <a href="dashboard.php">My dashboard</a> · <a href="actionLogout.php">Log out</a>';
+} else {
+    echo '<a href="signup.php">Sign up</a> · <a href="login.php">Login</a>';}
+    ?>
+    </nav><h1>MatchGaming!</h1></header>
+  <main class="flex-col flex-center">
 
-<body class="flex-col">
-  <main class="flex-col">
-    <h1 class="flex-col">MatchGaming!</h1>
-
-    <div class="panel flex-col">
+    <div id="testContainer" class="flex-col flex-center show">
       <div class="question-container" id="question">Question goes here.</div>
-      <div class="option-container flex-col">
-        <button class="option" onclick="" id="op1">option1</button>
-
+      <div class="option-container flex-col flex-center">
+        <button class="option" id="op1">option1</button>
         <button class="option" id="op2">option2</button>
-
         <button class="option" id="op3">option3</button>
-
         <button class="option" id="op4">option4</button>
       </div>
     </div>
-    <a href="#" id="submit">Submit</a>
+    <a href="#" id="submitTest">Submit</a>
     <div id="gameCardWrapper">
-      <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
-      <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
-      <ul id="gameCard">
-        <div id="liked"></div>
-        <div id="disliked"></div>
-        <div id="thanks">
-          Thanks for visiting! <button>See more games</button><button>Send my list</button>
+      <ul id="liked"></ul>
+      <ul id="disliked"></ul>
+      <ul id="gameCard"></ul>
+        <div id="thanks" class="flex-center flex-col">
+        <span class="thanks">Thanks for visiting! </span><a href="#" class="moreBtn" id="seeMoreGames">See more games</a>
         </div>
-      </ul>
-      <div id="options">
-        <i id="dislike" class="fa-solid fa-xmark"></i>
-        <form name="likedGames" action="like.php">
-          <input type="text" name="liked" /><button type="submit"><i id="like" class="fa-solid fa-heart"></i></button>
-        </form>
+        <div id="options">
+        <div class="buttonContainer"><i id="dislike" class="fa-solid fa-xmark"></i></div>
+        <button type="button" id="moreInfo" class="moreBtn">MORE INFO</button>
+        <div class="buttonContainer">
+          <form name="likedGames" method="post" id="likeForm" action="actionLike.php">
+            <input type="text" name="liked" id="likeInput" style="display: none"><button type="submit" id="likeButton"><i id="like" class="fa-solid fa-heart"></i></button>
+          </form>
+        </div>
       </div>
     </div>
-    <script src="./scripts.js" type="module"></script>
+    <script src="js/scripts.js" type="module"></script>
   </main>
 </body>
 
