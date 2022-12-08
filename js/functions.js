@@ -243,7 +243,6 @@ export function iterate(id) {
   // Getting the question
   const question = document.getElementById("question");
 
-  //   if (question !== null) {
   // Setting the question text
   question.innerHTML = Questions[id].q;
 
@@ -259,7 +258,6 @@ export function iterate(id) {
   op3.innerHTML = Questions[id].a[2].text;
   op4.innerHTML = Questions[id].a[3].text;
 }
-// }
 
 // Get unique keywords
 export const getUniqKeywords = (words) => {

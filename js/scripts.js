@@ -6,17 +6,10 @@ import {
   dislikedCard,
 } from "./functions.js";
 
-// Set start
-var start = true;
-
-// Next question
-if (start) {
-  iterate("0");
-}
-
 let id = 0;
+let start = true;
 let options = document.getElementsByClassName("option");
-const keywords = [];
+let keywords = [];
 let uniqKeywords = [];
 let stringKeywords = "";
 let pageNumber = 0;
@@ -81,6 +74,10 @@ dislike.addEventListener("click", dislikedCard);
 submit.addEventListener("click", getGameCard);
 seeMoreGames.addEventListener("click", getGameCard);
 moreInfo.addEventListener("click", getMoreInfo);
+
+if (start) {
+  iterate("0");
+}
 
 for (let i = 0; i < 4; i++) {
   options[i].addEventListener("click", () => {
